@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import OPEN_API_KEY from "./ApiKey.js"
 
 export const Slide = () =>{
     $(document).ready(() => {
@@ -6,7 +7,7 @@ export const Slide = () =>{
     })
   }
   
-const openai_api_key = "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"
+const openai_api_key = OPEN_API_KEY
         
 export const handleUserInput = async (prompt)=>{
            if(prompt.length==0){
