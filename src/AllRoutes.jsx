@@ -9,7 +9,6 @@ import Tags from "./pages/Tags/Tags"
 import Users from './pages/Users/Users'
 import UserProfile from './pages/UserProfile/UserProfile'
 import Subcription from './pages/Subcriptions/Subcriptions.jsx'
-import AuthOTP from "./components/RightSidebar/AuthOTP.jsx"
 
 const AllRoutes = () => {
   return (
@@ -23,7 +22,6 @@ const AllRoutes = () => {
         <Route path="/Users" element={<Users/>}/>
         <Route path="/Users/:id" element={<UserProfile/>}/>
         <Route path="/Subcriptions" element={<Subcription/>}/>
-        <Route path="/OTP" element={<AuthOTP/>}/>
      </Routes>
 
   )

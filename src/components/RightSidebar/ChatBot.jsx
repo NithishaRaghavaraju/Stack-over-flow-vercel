@@ -3,14 +3,12 @@ import {Slide , handleUserInput} from "./ChatBot.js"
 import { useState } from 'react';
 import robot from "../../assets/robot-solid.svg"
 import "./ChatBot.css"
-import {Link,useNavigate} from "react-router-dom"
 
 
 
 const Answers = () => {
     
     const [Ans,setAns] = useState("")
-    const [Msg, setMsg] = useState("")
 
     const prog_ans = (event) => {
       event.preventDefault();
@@ -38,8 +36,8 @@ const Answers = () => {
               </div>
                  <div className="chat-input">
                    <input className='input-chat' type="text" value={Ans} placeholder="Enter the question" onChange={(event) =>setAns(event.target.value)} />
-                    <Link to="/OTP">Submit</Link>
-                    {/* <button className='send-btn' onClick={prog_ans}>Submit</button> */}
+                    {/* <Link to="/OTP">Submit</Link> */}
+                    <button className='send-btn' onClick={prog_ans}>Submit</button>
              
               </div>
 
