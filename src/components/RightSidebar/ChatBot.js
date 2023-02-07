@@ -1,13 +1,17 @@
 import $ from 'jquery';
+
 export const Slide = () =>{
     $(document).ready(() => {
       $(".chat-btn").one("click", function () { $('.chat-box').slideToggle(1100); });
     })
   }
   
-const openai_api_key = "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"
+const openai_api_key = "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"
         
 export const handleUserInput = async (prompt)=>{
+           if(prompt.length==0){
+              return alert("Don't enter Empty Questions")
+           }
            var chat = document.querySelector(".chats");
            var input = $(".input-chat").val()
           let message1 = `<div class="my-chat"><p>${input}</p></div>`
@@ -18,7 +22,7 @@ export const handleUserInput = async (prompt)=>{
               model: "text-davinci-003",
               prompt: prompt,
               temperature: 0.9,
-              max_tokens: 64,
+              max_tokens: 100,
               top_p: 1,
               frequency_penalty: 0,
               presence_penalty: 0,

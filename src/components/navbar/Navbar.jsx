@@ -70,7 +70,7 @@ const Navbar = () => {
 
         </div>
         <div className='small-nav-icon small-search nav-sm'>
-    <input type="text" placeholder='Search ........' style={{width : "70vh"}}  />
+    <input type="text" className='vsm-search' placeholder='Search ........' />
     
     </div>
     </nav>

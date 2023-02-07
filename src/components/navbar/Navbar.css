@@ -107,6 +107,9 @@
         padding: 2%;
 
     }
+    .vsm-search{
+        width : 70vh;
+    }
     .bar{
         display: block;
         width: 15px;
@@ -133,5 +136,11 @@
     .very-sm{
         padding: 0px;
         margin: 0px;
+    }
+    
+}
+@media (max-width: 500px){
+    .vsm-search{
+        width : 40vh;
     }
 }
